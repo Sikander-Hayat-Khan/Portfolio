@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    background-color: #abe5c9;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    min-height: 80%;
+    width: 80%;
+    background-color: aliceblue;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    border-radius: 40px;
+    box-shadow: 0px 3px 35px 7px black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 6vw;
+    top: 2vh;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.notnav {
+    margin-right: 10vw;
+    border: 2px solid rgb(252, 246, 246);
+    background-color: rgb(200, 220, 244);
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro h1 {
+    width: 20vw;
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+    font-family: sans-serif;
+}
+
+.intro p {
+    width: 25vw;
+    position: relative;
+    top: 18vh;
+    left: 5vw;
+    font-size: 20px;
+}
+
+ul li button {
+    width: 7vw;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: rgb(200, 220, 244);
+    border: 2px white;
+    font-family: sans-serif;
+}
+
+ul li button:hover {
+    background-color: rgb(161, 177, 197);
+    cursor: pointer;
+}
+
+.me {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 51.5vw;
+    top: 10.5vw;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0px 4px 21px 8px black;
+}
+
+.intro ul {
+    width: 25vw;
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+    font-size: 20px;
+    font-family: sans-serif;
+    list-style: square;
+}
+
+.intro .welcome {
+    margin-top: 20px;
+}
+
+.intro p {
+    font-family: sans-serif;
+}
+
+.git {
+    width: 7vw;
+    height: 5vh;
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px white;
+    font-family: sans-serif;
+}
+
+.linkedin {
+    width: 7vw;
+    height: 5vh;
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px white;
+    font-family: sans-serif;
+}
+
+.git:hover {
+    background-color: rgb(71, 70, 72);
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    background-color: rgb(71, 70, 72);
+    cursor: pointer;
+}
+
+.email {
+    position: relative;
+    left: 5vw;
+    top: 20vh;
+}
+
+.phone {
+    position: relative;
+    left: 5vw;
+    top: 25vh;
+}
+
+.location {
+    position: relative;
+    left: 5vw;
+    top: 30vh;
+}
+
+.emailaddress {
+    position: relative;
+    top: 15.4vh;
+    left: 10vw;
+}
+
+.phonenumber {
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+}
+
+.address {
+    position: relative;
+    top: 25vh;
+    left: 10vw;
+}
+
+.contactimage {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 10vh;
+}
+
+
+.contactimage img {
+    float: left;
+    width: 13%;
+    margin: 1.5%;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contactimage::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Tablet view - 2 images per row */
+@media (max-width: 1024px) {
+    .contactimage img {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
+
+/* Mobile view - 1 image per row */
+@media (max-width: 768px) {
+    .contactimage img {
+        width: 90%;
+        margin: 5% auto;
+        float: none;
+        display: block;
+    }
+
+    /* Ensure clearing still works */
+    .contactimage::after {
+        clear: both;
+    }
+}
+
+
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+
+    .box {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        left: 0;
+        justify-content: center;
+    }
+
+    .notnav {
+        margin-right: 0;
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    .intro h1, 
+    .intro p, 
+    .git, 
+    .linkedin {
+        position: static;
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .git, .linkedin {
+        display: inline-block;
+        width: 40%;
+        margin: 10px 5%;
+    }
+
+    .me {
+        position: static;
+        display: block;
+        margin: 30px auto;
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 768px) {
+
+    .box {
+        width: 95%;
+        left: 2.5%;
+        top: 3%;
+        border-radius: 20px;
+        padding-bottom: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    ul li button {
+        width: 60vw;
+        height: 6vh;
+        font-size: 1rem;
+    }
+
+    .notnav {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .intro h1, 
+    .intro p, 
+    .intro .welcome {
+        font-size: 1.1rem;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .git, .linkedin {
+        width: 70%;
+        height: 6vh;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .me {
+        width: 200px;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+/* Extra small devices (phones < 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    ul li button {
+        width: 80vw;
+    }
+
+    .intro h1 {
+        font-size: 1.3rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .git, .linkedin {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .me {
+        width: 150px;
+    }
+}
