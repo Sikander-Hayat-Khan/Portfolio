@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikander Hayat Khan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-slate-800 dark:bg-dark dark:text-slate-200 transition-colors duration-300 font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md z-50 shadow-sm border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#home" class="text-xl font-bold text-primary">SHK.</a>
+                <div class="hidden md:flex space-x-8 items-center cursor-pointer">
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#education" class="hover:text-primary transition-colors">Education</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                Hi, I'm <span class="text-primary">Sikander Hayat Khan</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-slate-600 dark:text-slate-400 mb-8 font-medium">
+                Software Engineering Student & Full-Stack Developer
+            </h2>
+            <p class="text-lg md:text-xl text-slate-500 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Passionate about turning complex problems into clean, functional solutions through web development and AI/ML model training.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-secondary transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    Get In Touch
+                </a>
+                <a href="#projects" class="px-8 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full font-medium border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all shadow-sm hover:shadow-md">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-50 dark:bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-primary after:rounded-full">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
+                    <p>
+                        I am a Software Engineering student at NUST with hands-on experience building full-stack web applications and a growing focus on AI/ML. I am skilled in React, Node.js, MongoDB, and RESTful APIs, with practical exposure to real-time systems, data visualization, and machine learning workflows.
+                    </p>
+                    <p>
+                        Currently seeking opportunities in Web Development and AI/ML where I can apply my technical skills, continue to grow, and build modern, scalable solutions — whether working independently or as part of a team.
+                    </p>
+                    <div class="pt-4 grid grid-cols-2 gap-4 text-sm">
+                        <div><strong class="text-slate-900 dark:text-white">Email:</strong> <a target="_blank" href="mailto:sikanderhayatk2002@gmail.com">sikanderhayatk2002@gmail.com</a></div>
+                        <div><strong class="text-slate-900 dark:text-white">Phone:</strong> +92 317 8598159</div>
+                        <div><strong class="text-slate-900 dark:text-white">Location:</strong> Abbottabad, Pakistan</div>
+                        <div><strong class="text-slate-900 dark:text-white">Languages:</strong> English, Urdu, Japanese</div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+                    <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">Interests & Hobbies</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3"><i class="fas fa-code text-primary"></i> Data Visualization & ML Workflows</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-server text-primary"></i> RESTful APIs & Real-time Systems</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-utensils text-primary"></i> Cooking</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-horse text-primary"></i> Horse Riding</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-swimmer text-primary"></i> Swimming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-primary after:rounded-full">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
+                <!-- Skill Item -->
+                <div class="flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow">
+                    <span class="font-bold text-slate-800 dark:text-slate-200">Web Development</span>
+                    <div class="flex text-yellow-500 gap-1 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i>
+                    </div>
+                </div>
+                <!-- Skill Item -->
+                <div class="flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow">
+                    <span class="font-bold text-slate-800 dark:text-slate-200">Software Testing</span>
+                    <div class="flex text-yellow-500 gap-1 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i>
+                    </div>
+                </div>
+                <!-- Skill Item -->
+                <div class="flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow">
+                    <span class="font-bold text-slate-800 dark:text-slate-200">Building ML Models</span>
+                    <div class="flex text-yellow-500 gap-1 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i>
+                    </div>
+                </div>
+                <!-- Skill Item -->
+                <div class="flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow">
+                    <span class="font-bold text-slate-800 dark:text-slate-200">Data Visualization</span>
+                    <div class="flex text-yellow-500 gap-1 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i>
+                    </div>
+                </div>
+                <!-- Skill Item -->
+                <div class="flex items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow">
+                    <span class="font-bold text-slate-800 dark:text-slate-200">Deep Learning</span>
+                    <div class="flex text-yellow-500 gap-1 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i><i class="far fa-star text-slate-300 dark:text-slate-600"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-50 dark:bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-primary after:rounded-full">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 group md:col-span-2">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Search Engine for Medium Articles</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-center">Sept 2024 - Jan 2025</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">
+                            Built an end-to-end search engine for Medium articles (dataset 190k+): scraped and cleaned data with Python; implemented an inverted index and BM25-based multi-field ranking with field weighting and relevance tuning. Added Google Gemini–powered AI article summarization, real-time indexing for instant ingestion of new articles, smart filtering/sorting by relevance and date, and rich result cards. Implemented search and indexing APIs with Flask and a lightweight frontend demo; integrated live status updates for uploads and Redis-backed query caching to improve throughput. Tuned performance and relevance through iterative evaluation and A/B testing, achieving median query latency under 200ms.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Python</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Flask</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Redis</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Google Gemini AI</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 group">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Interactive Infectious Network Flow (IMF)</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-center">Feb 2025 - May 2026</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-4">
+                            Interactive web app that simulates infectious spread across configurable communities and hubless nodes with adjustable connections, dynamic evolution, and disease controls. Includes vaccination systems and real-time visualization with an interactive network graph, node state indicators, and community overlays.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Algorithms</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Data Visualization</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 group">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Location Based Journaling Website</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-center">Sept 2025 - Dec 2025</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-4">
+                            Developed a full-stack journaling app with geotagged memories, map pins, real-time chat, and fine-grained privacy controls via client-side encryption. Implemented RESTful APIs, WebSocket-based real-time messaging, scalable media uploads, and interactive map integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">React</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">Node.js</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">MongoDB</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-md">WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-primary after:rounded-full">Education & Achievements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Education Timeline -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-graduation-cap text-primary"></i> Education</h3>
+                    <div class="space-y-8 relative before:absolute before:inset-y-0 before:left-5 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                        
+                        <div class="relative flex items-start flex-col sm:flex-row group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-slate-900 bg-primary text-white shadow relative z-10 shrink-0 mb-4 sm:mb-0 sm:mr-6">
+                                <i class="fas fa-university text-sm"></i>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 w-full">
+                                <h4 class="text-lg font-bold">Software Engineering</h4>
+                                <p class="text-primary font-medium mb-2">NUST, Islamabad</p>
+                                <p class="text-sm text-slate-500 mb-4">Sept 2023 - Jun 2027</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Relevant coursework: DSA, Databases, Web & Software Engineering. Completed team projects building full-stack web apps using React, Node.js/Express, and PostgreSQL.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start flex-col sm:flex-row group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-slate-900 bg-slate-300 dark:bg-slate-700 text-slate-600 dark:text-slate-300 shadow relative z-10 shrink-0 mb-4 sm:mb-0 sm:mr-6">
+                                <i class="fas fa-school text-sm"></i>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 w-full">
+                                <h4 class="text-lg font-bold">HSSC</h4>
+                                <p class="text-primary font-medium mb-2">Abbottabad Public School</p>
+                                <p class="text-sm text-slate-500">May 2015 - May 2021</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-certificate text-primary"></i> Certifications</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-1">Supervised Machine Learning</h4>
+                            <p class="text-sm font-medium text-primary mb-2">DeepLearning.AI & Stanford University (Coursera) · Jul 2025</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Authorized by DeepLearning.AI and Stanford University. Covers regression, classification, and core supervised learning techniques.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-1">Advanced Learning Algorithms</h4>
+                            <p class="text-sm font-medium text-primary mb-2">DeepLearning.AI & Stanford University (Coursera) · Aug 2025</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Authorized by DeepLearning.AI and Stanford University. Covers neural networks, decision trees, and advanced ML algorithms.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-1">Google Cloud Skill Badges</h4>
+                            <p class="text-sm font-medium text-primary mb-2">Google Cloud · 2025</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Get Started with Cloud Storage & The Basics of Google Cloud Compute. Demonstrated skills in infrastructure, storage CLI, and data protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect & Footer -->
+    <footer id="contact" class="bg-slate-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+                I'm currently looking for new opportunities in Web Development and AI/ML. My inbox is always open whether you have a question or just want to say hi!
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="mailto:sikanderhayatk2002@gmail.com" class="flex items-center gap-2 px-6 py-3 bg-slate-800 rounded-full hover:bg-primary transition-colors">
+                    <i class="fas fa-envelope"></i> sikanderhayatk2002@gmail.com
+                </a>
+                <a href="tel:+923178598159" class="flex items-center gap-2 px-6 py-3 bg-slate-800 rounded-full hover:bg-primary transition-colors">
+                    <i class="fas fa-phone"></i> +92 317 8598159
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="#" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all text-xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-slate-500 text-sm">
+                <p>&copy; 2026 Sikander Hayat Khan.</p>
+                <p class="mt-2">House#332, Street#06, Jinnahabad, Mandian, Abbottabad (22044)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
