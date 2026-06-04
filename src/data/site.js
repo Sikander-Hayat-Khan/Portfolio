@@ -11,7 +11,8 @@ export const site = {
   typewriterRoles: [
     'Software Engineering Student',
     'Full-Stack Developer',
-    'Machine Learning Enthusiast',
+    'ML Engineer',
+    'Agentic AI Engineer',
     'Problem Solver',
   ],
   social: {
