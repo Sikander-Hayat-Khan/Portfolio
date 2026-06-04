@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 const DEFAULT_ROLES = [
   'Software Engineering Student',
   'Full-Stack Developer',
-  'Machine Learning Enthusiast',
+  'ML Engineer',
+  'Agentic AI Engineer',
   'Problem Solver',
 ];
 
