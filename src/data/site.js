@@ -9,6 +9,7 @@ export const site = {
   phone: '+92 317 8598159',
   profileImage: '/Assets/Images/profilepic.jpeg',
   typewriterRoles: [
+    'Front-End AI Engineering Intern @ FlyRank AI',
     'Software Engineering Student',
     'Full-Stack Developer',
     'ML Engineer',

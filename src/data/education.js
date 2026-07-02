@@ -19,6 +19,18 @@ export const educationEntries = [
   },
 ];
 
+export const experienceEntries = [
+  {
+    icon: 'fa-school',
+    iconStyle: 'bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-primary/30',
+    title: 'Front-End AI Engineering Intern',
+    institution: 'FlyRank AI',
+    location: 'Sarajevo, Federation of Bosnia and Herzegovina',
+    period: 'Jun 2026 - Present',
+    mode: 'Remote',
+  },
+];
+
 export const certifications = [
   {
     title: 'Supervised Machine Learning',

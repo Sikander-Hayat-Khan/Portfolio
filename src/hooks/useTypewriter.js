@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const DEFAULT_ROLES = [
+  'Front-End AI Engineering Intern @ FlyRank AI',
   'Software Engineering Student',
   'Full-Stack Developer',
   'ML Engineer',
