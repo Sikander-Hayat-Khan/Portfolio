@@ -5,6 +5,16 @@ import Reveal from '../ui/Reveal';
 export default function Hero() {
   const typewriterText = useTypewriter(site.typewriterRoles);
 
+  const DownloadStaticPDF = () => {
+    const pdfUrl = "/Assets/Resume.pdf"; // Path to your PDF file in the public folder
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Resume–Sikander-Hayat-Khan.pdf"; // The filename given to the user
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -67,6 +77,12 @@ export default function Hero() {
             >
               Let&apos;s Connect
             </a>
+            <button
+              onClick={DownloadStaticPDF}
+              className="px-8 py-4 bg-white/80 dark:bg-darker/80 backdrop-blur-md text-slate-900 dark:text-white rounded-full font-semibold border border-slate-200/50 dark:border-white/10 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              Download Resume
+            </button>
           </div>
         </Reveal>
       </div>
